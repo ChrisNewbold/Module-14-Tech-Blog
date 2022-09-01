@@ -1,0 +1,7 @@
+{{!-- create blog --}}
+<div id="blogwrap">
+  {{#each individualBlogData as |blog|}}
+    <p><a href="#" id="viewBlog-{{blog.id}}">{{blog.title}}</a></p>
+    <p id="blogCopy-{{blog.id}}">{{blog.copy}}</p>
+  {{/each}}
+</div>
