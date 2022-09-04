@@ -1,34 +1,29 @@
 async function editFormHandler(event) {
     event.preventDefault();
-  
-    const title = document.querySelector('input[name="Blog-title"]').value.trim();
-    const copy = document.querySelector('input[name="Blog-copy"]').value.trim();
+
+    const title = document.querySelector('#blog-title').value.trim();
+    const copy = document.querySelector('#blog-copy').value.trim();
     const id = window.location.toString().split("/")[
-      window.location.toString().split("/").length - 1
+      window.location.toString().split("/").length - 2
     ];
-    const response = await fetch(`/api/Blogs/${id}`, {
+    const response = await fetch(`/api/blogs/${id}`, {
       method: "PUT",
       body: JSON.stringify({
         title,
         copy,
       }),
       headers: {
-        "copy-Type": "application/json",
+        "Content-Type": "application/json",
       },
     });
-  
+    // response check
     if (response.ok) {
       document.location.replace("/dashboard/");
     } else {
       alert(response.statusText);
     }
   }
-  
+
   document
-    .querySelector(".edit-Blog-form")
+    .querySelector(".edit-blog-form")
     .addEventListener("submit", editFormHandler);
-  
-  document
-    .querySelector(".edit-Blog-form")
-    .addEventListener("submit", editFormHandler);
-  

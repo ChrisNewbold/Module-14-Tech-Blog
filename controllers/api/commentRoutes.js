@@ -11,13 +11,13 @@ router.get("/", (req, res) => {
         res.status(500).json(err);
       });
   });
-  
+
   router.post('/', (req, res) => {
     // check the session
     if (req.session) {
       Comment.create({
         body: req.body.body,
-        Blog_id: req.body.Blog_id,
+        blog_id: req.body.blog_id,
         // use the id from the session
         user_id: req.session.user_id
       })
@@ -28,7 +28,7 @@ router.get("/", (req, res) => {
         });
     }
   });
-  
+
   router.delete("/:id", (req, res) => {
     Comment.destroy({
       where: {

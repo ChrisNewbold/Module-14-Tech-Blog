@@ -2,6 +2,7 @@ const User = require('./User');
 const Comment = require('./Comment');
 const Blog = require('./Blog');
 
+// Links all the models
 User.hasMany(Blog, {
   foreignKey: 'user_id',
   onDelete: 'CASCADE'
@@ -13,5 +14,8 @@ Blog.hasMany(Comment, {
 Blog.belongsTo(User, {
   foreignKey: 'user_id'
 });
-
+Comment.belongsTo(User, {
+  foreignKey: 'user_id'
+});
+// exports file
 module.exports = { User, Blog, Comment };

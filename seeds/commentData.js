@@ -2,16 +2,20 @@ const { Comment } = require("../models");
 
     const commentData = [
     {
-        "body": "You little ripper was a great little blog champion!.",
-        "user_id": 1
+        "body": "Suspendisse convallis gravida dui at mollis. Ut feugiat augue non libero molestie, non fringilla ante lobortis.",
+        "user_id": 1,
+        "blog_id": 1
     },
     {
-        "body": "Loved compo! great read mate!",
-        "user_id": 2
+        "body": "Orci varius natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus.",
+        "user_id": 2,
+        "blog_id": 1
+
       },
       {
-        "body": "Trenty Ruled Brah!",
-        "user_id": 3
+        "body": "Nullam imperdiet enim vitae vehicula sollicitudin.",
+        "user_id": 3,
+        "blog_id": 1
       }
   ]
 

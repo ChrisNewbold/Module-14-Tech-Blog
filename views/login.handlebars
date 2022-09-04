@@ -1,1 +1,24 @@
 {{!-- user log in --}}
+
+{{!-- wrap --}}
+<div class="wrap">
+{{!-- user log in --}}
+ <form class= "login-form">
+     {{!-- email input --}}
+  <div class="mb-3">
+    <label for="exampleInputEmail1" class="form-label">Email address</label>
+    <input type="email" class="form-control" id="email-login" aria-describedby="emailHelp">
+    <div id="emailHelp" class="form-text">We'll never share your email with anyone else.</div>
+  </div>
+  {{!-- password input --}}
+<label for="inputPassword5" class="form-label">Password</label>
+<input type="password" id="password-login" class="form-control" aria-describedby="passwordHelpBlock">
+<div id="passwordHelpBlock" class="form-text">
+  Your password must be 8-20 characters long, contain letters and numbers, and must not contain spaces, special characters, or emoji.
+</div></br>
+<button type="submit" class="btn btn-warning d-grid gap-2 col-12 mx-auto">LOGIN</button></form>
+<p class="or-wrap">---------------------- or ----------------------</p>
+<a href="/signup"><button type="submit" class="btn btn-warning d-grid gap-2 col-12 mx-auto">SIGN UP</button></a></form>
+</div>
+
+<script src="/js/login.js"></script>

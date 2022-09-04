@@ -59,5 +59,5 @@ class User extends Model {
         modelName: 'user',
       }
     );
-
+    // exports file
     module.exports = User;

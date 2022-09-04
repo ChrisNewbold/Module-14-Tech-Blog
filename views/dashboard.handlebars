@@ -1,5 +1,25 @@
 {{!-- individual blogs --}}
-<p>{{individualBlogData.title}}</p>
-<p>{{individualBlogData.copy}}</p>
-<button>edit blog</button>
-<button id="commentbtn-{{individualBlogData.id}}">comment blog</button>
+  {{#each blogs as |blog|}}
+<div id="blogwrap" class="d-grid gap-2 col-6 mx-auto">
+  <div class="col">
+    <div class="card h-100">
+      <div class="card-body">
+        <h2 class="card-title">{{blog.title}}</h2>
+        <p class="card-text" id="blogCopy-{{blog.id}}">{{blog.copy}}</p>
+      <a href="/blogs/{{blog.id}}/edit" id="viewBlog-{{blog.id}}"><button type="submit" class="btn btn-warning btn-md">EDIT BLOG</button></form></a>
+      </div>
+      <div class="card-footer">
+        <small class="text-muted">{{blog.date_created}}</small>
+      </div>
+    </div>
+  </div>
+</div>
+  {{/each}}
+</br>
+{{>post}}
+</br>
+    <div class="d-grid gap-2 col-6 mx-auto">
+    <button class="add-Blog-btn btn btn-warning">ADD NEW BLOG</button>
+    </div>
+</div>
+<script src="/js/dashboard.js"></script>

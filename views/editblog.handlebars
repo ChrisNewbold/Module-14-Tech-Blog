@@ -1,0 +1,18 @@
+<div class="wrap">
+ <form class="edit-blog-form">
+     {{!-- Blog Title Input --}}
+  <div class="mb-3">
+    <label for="exampleInputEmail1" class="form-label">Title</label>
+    <input type="text" class="form-control" id="blog-title" aria-describedby="emailHelp" value="{{blog.title}}">
+  </div>
+  {{!-- Blog Copy Input --}}
+<label for="inputPassword5" class="form-label">Copy</label>
+<div class="mb-3">
+<input id="blog-copy" class="form-control" aria-describedby="passwordHelpBlock" value="{{blog.copy}}">
+</div>
+</br>
+<button type="submit" class="btn btn-warning btn-lg">UPDATE</button>
+<button type="button" class="btn btn-danger btn-lg delete-blog-btn">DELETE</button></form>
+</div>
+<script src="/js/edit.js"></script>
+<script src="/js/delete.js"></script>

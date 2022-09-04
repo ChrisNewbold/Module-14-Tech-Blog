@@ -1,0 +1,18 @@
+<nav>
+  <div class="nav-container">
+    <a class="navbar-brand" href="/">myBLOG</a>
+    <ul>
+      <li class="nav-item"><a class="nav-link" aria-current="page" href="/">HOME</a></li>
+      {{#if userLoggedIn}}
+      <li class="nav-item"><a class="nav-link" aria-current="page" href="/dashboard">DASHBOARD</a></li>
+      <li class="nav-item"><a id="logout" class="nav-link" aria-current="page" href="/">LOGOUT</a></li>
+      {{/if}}
+      {{#unless userLoggedIn}}
+      <li class="nav-item"><a class="nav-link" aria-current="page" href="/login">LOGIN</a></li>
+      {{/unless}}
+    </ul>
+    </div>
+  </div>
+</nav>
+
+<script src="/js/logout.js"></script>

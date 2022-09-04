@@ -40,5 +40,5 @@ Blog.init(
           modelName: 'blog',
         }
       );
-
+// exports file
 module.exports = Blog;

@@ -1,1 +1,47 @@
 {{!-- read individual blog Blog --}}
+<div id="blogwrap" class="blog-wrap">
+  <div class="col">
+    <div class="card h-100">
+      <div class="card-body">
+        <h2 class="card-title">{{blog.title}}</h2>
+        <p class="card-text" id="blogCopy-{{blog.id}}">{{blog.copy}}</p>
+      </div>
+      <div class="card-footer">
+        <small class="text-muted">Author: {{blog.user.username}}</small></br>
+        <small class="text-muted">{{blog.date_created}}</small>
+      </div>
+    </div>
+  </div>
+</div>
+
+<div class="comment-card">
+<h3>Reader Comments</h3>
+</br>
+{{#each blog.comments as |comment|}}
+    <div class="card h-100">
+    <div class="card-body">
+    <p class="card-text">{{comment.body}}</p>
+    </div>
+    <div class="card-footer">
+    <small class="text-muted">Author: {{comment.user.username}}</small></br>
+    <small class="text-muted">{{comment.date_created}}</small>
+    </br>
+        </br>
+    {{#if comment.can_delete}}
+      <button type="button" class="btn btn-warning btn-sm delete-comment-btn" value="{{comment.id}}">DELETE COMMENT</button>
+    {{/if}}
+        </div>
+    </div>
+    </br>
+{{/each}}
+</br>
+{{#if userLoggedIn}}
+ <form class= "comment-form">
+  <div class="mb-3">
+    <label for="exampleInputEmail1" class="form-label">Add Comment</label>
+    <textarea type="textarea" class="form-control" id="comment" aria-describedby="emailHelp"></textarea>
+  </div>
+<button type="submit" class="btn btn-warning btn-lg">COMMENT</button></form>
+<script src="/js/comment.js"></script>
+{{/if}}
+</div>

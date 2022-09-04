@@ -21,10 +21,11 @@ const myStore = new SequelizeStore({
 
 app.use(
   session({
+    store: myStore,
     secret: process.env.SESSION_SECRET,
     resave: false,
     saveUninitialized: true,
-    cookie: { maxAge: 300000 },
+    cookie: { maxAge: 500000 },
   })
 );
 

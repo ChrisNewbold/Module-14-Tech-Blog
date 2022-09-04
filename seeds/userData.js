@@ -2,22 +2,26 @@ const { User } = require("../models");
 
     const userData = [
     {
-      "username": "Sal",
-      "email": "sal@hotmail.com",
-      "password": "password12345"
+      "username": "Kelly",
+      "email": "kelly@hotmail.com",
+      "password": "Password12345"
     },
     {
-      "username": "Lernantino",
-      "email": "lernantino@gmail.com",
-      "password": "password12345"
+      "username": "Nug",
+      "email": "nug@gmail.com",
+      "password": "Test123!"
     },
     {
-      "username": "Amiko",
-      "email": "amiko2k20@aol.com",
-      "password": "password12345"
+      "username": "Chris",
+      "email": "chris@test.com",
+      "password": "Password123!"
     }
   ]
-    
-    const seedUsers = () => User.bulkCreate(userData);
-    
+
+    const seedUsers = async () => {
+      for (const user of userData) {
+        await User.create(user);
+      }
+    }
+
     module.exports = seedUsers;
