@@ -1,4 +1,10 @@
 {{!-- read individual blog Blog --}}
+{{!-- reminder to log in to comment --}}
+<div class="jumbotron jumbotron-fluid text-center">
+  <div class="container">
+    <p class="lead">Remember to log in to comment on your fellow bloggers posts!</p>
+  </div>
+</div>
 <div id="blogwrap" class="blog-wrap">
   <div class="col">
     <div class="card h-100">
@@ -7,7 +13,7 @@
         <p class="card-text" id="blogCopy-{{blog.id}}">{{blog.copy}}</p>
       </div>
       <div class="card-footer">
-        <small class="text-muted">Author: {{blog.user.username}}</small></br>
+        <small class="text-muted">User Name: {{blog.user.username}}</small></br>
         <small class="text-muted">{{blog.date_created}}</small>
       </div>
     </div>
@@ -23,7 +29,7 @@
     <p class="card-text">{{comment.body}}</p>
     </div>
     <div class="card-footer">
-    <small class="text-muted">Author: {{comment.user.username}}</small></br>
+    <small class="text-muted">User Name: {{comment.user.username}}</small></br>
     <small class="text-muted">{{comment.date_created}}</small>
     </br>
         </br>
