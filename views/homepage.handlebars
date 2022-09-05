@@ -1,14 +1,8 @@
 {{!-- create blog --}}
-{{!-- sign in or sign up prompt --}}
-<div class="jumbotron jumbotron-fluid text-center">
-  <div class="container">
-    <h1 class="display-4">Sign up or Log in with us today!</h1>
-    <p class="lead">Sign up or Log in to start creating or commenting on Blogs from fellow users!</p>
-  </div>
-</div>
   {{#each blogs as |blog|}}
 <div id="blogwrap" class="d-flex flex-wrap justify-content-center row row-cols-sm-2 row-cols-md-3 m-3 g-4">
   <div class="col">
+      <div class="col">
     <div class="card h-100">
       <div class="card-body">
         <h2 class="card-title">{{blog.title}}</h2>
@@ -17,6 +11,7 @@
       </div>
       <div class="card-footer">
         <small class="text-muted">{{blog.date_created}}</small>
+      </div>
       </div>
     </div>
   </div>
