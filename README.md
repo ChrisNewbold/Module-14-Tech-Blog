@@ -74,11 +74,17 @@ THEN I am able to view comments but I am prompted to log in again before I can a
 
 Please find GIF of walk through below
 
-![working example gif](./assets/Object%20Relational%20Mapping.gif)
+![working example gif](./assets/images/tech-blog.gif)
 
 Please find MP4 of walk through below
 
-[click here for mp4](https://drive.google.com/file/d/1PyFQjxXppL-zDcxn1_LaYSURqwbmniJk/view)
+[click here for mp4](https://drive.google.com/file/d/1Bfpa0arNadwQRavQyNbKqgypKgrS3cRl/view)
+
+Screen Shots
+![Homepage](./assets/images/homepage.png)
+![Dashboard](./assets/images/dashboard.png)
+![login](./assets/images/login.png)
+![Sign up](./assets/images/login.png)
 
 ## Installation
 
