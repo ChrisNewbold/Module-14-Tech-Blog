@@ -131,7 +131,7 @@ To run this application follow the below:
 
 • [express-handlebars](https://www.npmjs.com/package/express-handlebars)
 
-• [connect-session-sequelize](https://www.npmjs.com/package/sequelize)
+• [sequelize](https://www.npmjs.com/package/sequelize)
 
 • [express-session](https://www.npmjs.com/package/express-session)
 
