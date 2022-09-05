@@ -136,5 +136,3 @@ To run this application follow the below:
 • [express-session](https://www.npmjs.com/package/express-session)
 
 • [bcrypt](https://www.npmjs.com/package/bcrypt)
-
-• [dotenv](https://www.npmjs.com/package/dotenv)
