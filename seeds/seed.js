@@ -4,12 +4,12 @@ const { User, Blog } = require('../models');
 const mysql = require("mysql2")
 const userData = require('./userData');
 const blogData = require('./blogData');
-const con = mysql.createConnection({
-  host: process.env.DB_HOST,
-  user: process.env.DB_USER,
-  password: process.env.DB_PASSWORD,
-  port: process.env.DB_PORT,
-});
+// const con = mysql.createConnection({
+//   host: process.env.DB_HOST,
+//   user: process.env.DB_USER,
+//   password: process.env.DB_PASSWORD,
+//   port: process.env.DB_PORT,
+// });
 const databaseName = process.env.DB_NAME;
 const seedUsers = require("./userData");
 const seedBlog = require("./blogData");
@@ -27,12 +27,12 @@ const seedAll = async () => {
   process.exit(0);
 };
 
-con.connect((err) => {
-  if (err) throw err;
-  con.query(`CREATE DATABASE IF NOT EXISTS ${databaseName}`, (err2) => {
-    if (err2) throw err2;
-  });
-  con.end();
-  console.log("CREATED DATABASE");
-});
+// con.connect((err) => {
+//   if (err) throw err;
+//   con.query(`CREATE DATABASE IF NOT EXISTS ${databaseName}`, (err2) => {
+//     if (err2) throw err2;
+//   });
+//   con.end();
+//   console.log("CREATED DATABASE");
+// });
 seedAll();
