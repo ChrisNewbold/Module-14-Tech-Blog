@@ -74,6 +74,8 @@ THEN I am able to view comments but I am prompted to log in again before I can a
 
 Please find GIF of walk through below
 
+[link to deployed application](https://chris-newbold-tech-blog.herokuapp.com/)
+
 ![working example gif](./assets/images/tech-blog.gif)
 
 Please find MP4 of walk through below
