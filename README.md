@@ -3,12 +3,19 @@
 ## Table of Content
 
 • [My Task](#my-task)
+
 • [User Story](#user-story)
+
 • [Acceptance Criteria](#acceptance-criteria)
+
 • [Mock-Up](#mock-up)
+
 • [Installation](#installation)
+
 • [Usage](#usage)
+
 • [Skills Used](#skills-used)
+
 • [Credits](#credits)
 
 ## My Task
