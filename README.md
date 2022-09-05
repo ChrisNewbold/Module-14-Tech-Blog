@@ -83,8 +83,11 @@ Please find MP4 of walk through below
 Screen Shots
 ![Homepage](./assets/images/homepage.png)
 ![Dashboard](./assets/images/dashboard.png)
-![login](./assets/images/login.png)
+![login](./assets/images/signup.png)
 ![Sign up](./assets/images/login.png)
+![Add Blog](./assets/images/add-blog.png)
+![Edit Blog](./assets/images/edit-blog.png)
+![Comment](./assets/images/add-comment.png)
 
 ## Installation
 
