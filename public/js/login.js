@@ -1,5 +1,3 @@
-
-
 async function loginFormHandler(event) {
     event.preventDefault();
 
@@ -18,6 +16,9 @@ async function loginFormHandler(event) {
       // response check
       if (response.ok) {
         document.location.replace('/dashboard');
+
+      } else if (response.status === 400) {
+        alert("Bad user name or password. Please ensure you have signed up!")
       } else {
         alert(response.statusText);
       }
